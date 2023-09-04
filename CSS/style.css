@@ -4,4 +4,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 5px;
+}
+
+footer {
+    padding: 5px;
+}
+
+/* DEBUG */
+
+.debug header, .debug footer {
+border: 2px solid green;
+}
+
+.debug .container {
+    border:2px solid black;
+    padding: 5px;
+}
+
+.debug .row {
+    display: flex;
+    border: 2px solid pink
+}
+
+/*  */
+
+.row {
+    justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* COLUMNS */
+
+.debug [class^="col-"] {
+    border: 2px solid cornflowerblue;
+padding: 5px;
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-2 {
+    display: flex;
+    flex-basis: calc((100% / 12) * 2);
 }
