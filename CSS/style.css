@@ -26,6 +26,9 @@ section {
     padding: 15px 0px;
 }
 
+a {
+    padding: 5px;
+}
 
 /* DEBUG */
 
@@ -60,9 +63,17 @@ border: 2px solid greenyellow;
     justify-content: center;
 }
 
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-nav {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .container {
@@ -76,6 +87,15 @@ border: 2px solid greenyellow;
     padding: 10px 0px;
 }
 
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+}
+
+.logo {
+        padding: 10px 0px;
+}
 
 /* COLUMNS */
 
@@ -99,6 +119,7 @@ border: 2px solid greenyellow;
 
 .col-2 {
     flex-basis: calc((100% / 12) * 2);
+
 }
 
 .col-10 {
