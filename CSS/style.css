@@ -9,35 +9,54 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     padding: 5px;
+    background-color: rgb(173, 216, 230);
 }
 
 footer {
     padding: 5px;
 }
 
+section {
+    padding: 10px 0px;
+}
+
+
 /* DEBUG */
 
+.debug [class^="col-"] {
+    border: 2px solid greenyellow;
+    padding: 5px;
+}
+
 .debug header, .debug footer {
-border: 2px solid green;
+border: 2px solid greenyellow;
 }
 
 .debug .container {
-    border:2px solid black;
+    border:2px solid greenyellow;
     padding: 5px;
 }
 
 .debug .row {
-    display: flex;
-    border: 2px solid pink
+    border: 2px solid greenyellow
 }
 
-/*  */
+/* CLASSES */
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 .row {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -46,11 +65,21 @@ border: 2px solid green;
     justify-content: center;
 }
 
+.container {
+     max-width: 900px;
+     margin: 0 auto;
+}
+
+
 /* COLUMNS */
 
-.debug [class^="col-"] {
-    border: 2px solid cornflowerblue;
-padding: 5px;
+.col-5 {
+    flex-basis: calc((100% / 12) * 5);
+}
+
+.col-7 {
+    flex-basis: calc((100% / 12) * 7);
+    min-height: 250px;
 }
 
 .col-8 {
@@ -58,6 +87,41 @@ padding: 5px;
 }
 
 .col-2 {
-    display: flex;
     flex-basis: calc((100% / 12) * 2);
+}
+
+.col-10 {
+    flex-basis: calc((100% / 12) * 10);
+    min-height: 250px;
+}
+
+
+/* BACKGROUND COLORS */
+
+.blue {
+    background-color: rgb(2, 0, 139);
+}
+
+.white {
+    background-color: white;
+}
+
+.pink {
+    background-color: rgb(238, 130, 238);
+}
+
+.orange {
+    background-color: rgb(218, 165, 32);
+}
+
+.l-blue {
+    background-color: rgb(29, 144, 255);
+}
+
+.l-pink {
+    background-color: rgb(255, 192, 203);
+}
+
+.l-grey {
+    background-color: rgb(211, 211, 211);
 }
