@@ -19,6 +19,7 @@ header {
 
 footer {
     padding: 5px;
+    background-color: rgb(35, 39, 42);
 }
 
 section {
@@ -70,6 +71,12 @@ border: 2px solid greenyellow;
      margin: 0 auto;
 }
 
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
 
 /* COLUMNS */
 
@@ -107,6 +114,10 @@ border: 2px solid greenyellow;
 
 /* BACKGROUND COLORS */
 
+.l-blue {
+    background-color: rgb(29, 144, 255);
+}
+
 .blue {
     background-color: rgb(2, 0, 139);
 }
@@ -115,6 +126,9 @@ border: 2px solid greenyellow;
     background-color: white;
 }
 
+.l-pink {
+    background-color: rgb(255, 192, 203);
+}
 
 .pink {
     background-color: rgb(238, 130, 238);
@@ -132,16 +146,12 @@ border: 2px solid greenyellow;
     background-color: rgb(32, 178, 170);
 }
 
+.mint {
+    background-color: rgb(127, 255, 212);
+}
+
 .orange {
     background-color: rgb(218, 165, 32);
-}
-
-.l-blue {
-    background-color: rgb(29, 144, 255);
-}
-
-.l-pink {
-    background-color: rgb(255, 192, 203);
 }
 
 .l-grey {
