@@ -12,24 +12,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    padding: 10px;
-    background-color: rgb(173, 216, 230);
-}
-
-footer {
-    padding: 5px;
-    background-color: rgb(35, 39, 42);
-}
-
-section {
-    padding: 15px 0px;
-}
-
-a {
-    padding: 5px;
-}
-
 /* DEBUG */
 
 .debug [class^="col-"] {
@@ -47,6 +29,82 @@ border: 2px solid greenyellow;
 
 .debug .row {
     border: 2px solid greenyellow
+}
+
+.debug header {
+    padding: 10px;
+    background-color: rgb(173, 216, 230);
+}
+
+.debug footer {
+    padding: 5px;
+    background-color: rgb(35, 39, 42);
+}
+
+.debug .footer__row {
+    padding: 10px 0px;
+}
+
+.debug section {
+    padding: 15px 0px;
+}
+
+.debug a {
+    padding: 5px;
+}
+
+.debug .login, .debug .logo {
+        padding: 10px 0px;
+}
+
+/* BACKGROUND COLORS */
+
+.debug .l-blue {
+    background-color: rgb(29, 144, 255);
+}
+
+.debug .blue {
+    background-color: rgb(2, 0, 139);
+}
+
+.debug .white {
+    background-color: white;
+}
+
+.debug .l-pink {
+    background-color: rgb(255, 192, 203);
+}
+
+.debug .pink {
+    background-color: rgb(238, 130, 238);
+}
+
+.debug .d-pink {
+    background-color: rgb(240, 127, 128);
+}
+
+.debug .green {
+    background-color: rgb(34, 139, 34);
+}
+
+.debug .a-green {
+    background-color: rgb(32, 178, 170);
+}
+
+.debug .mint {
+    background-color: rgb(127, 255, 212);
+}
+
+.debug .orange {
+    background-color: rgb(218, 165, 32);
+}
+
+.debug .l-grey {
+    background-color: rgb(211, 211, 211);
+}
+
+.debug .d-grey {
+    background-color: rgb(35, 39, 42);
 }
 
 /* CLASSES */
@@ -84,17 +142,11 @@ border: 2px solid greenyellow;
 .footer__row {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
 }
 
 .login {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 0px;
-}
-
-.logo {
-        padding: 10px 0px;
 }
 
 /* COLUMNS */
@@ -131,52 +183,3 @@ border: 2px solid greenyellow;
 }
 
 
-/* BACKGROUND COLORS */
-
-.l-blue {
-    background-color: rgb(29, 144, 255);
-}
-
-.blue {
-    background-color: rgb(2, 0, 139);
-}
-
-.white {
-    background-color: white;
-}
-
-.l-pink {
-    background-color: rgb(255, 192, 203);
-}
-
-.pink {
-    background-color: rgb(238, 130, 238);
-}
-
-.d-pink {
-    background-color: rgb(240, 127, 128);
-}
-
-.green {
-    background-color: rgb(34, 139, 34);
-}
-
-.a-green {
-    background-color: rgb(32, 178, 170);
-}
-
-.mint {
-    background-color: rgb(127, 255, 212);
-}
-
-.orange {
-    background-color: rgb(218, 165, 32);
-}
-
-.l-grey {
-    background-color: rgb(211, 211, 211);
-}
-
-.d-grey {
-    background-color: rgb(35, 39, 42);
-}
