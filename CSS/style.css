@@ -12,24 +12,69 @@ body {
     min-height: 100vh;
 }
 
+/* CLASSES */
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* COLUMNS */
+.col-2 {
+    flex-basis: calc((100% / 12) * 2);
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    flex-basis: calc((100% / 12) * 5);
+}
+
+.col-7 {
+    flex-basis: calc((100% / 12) * 7);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-10 {
+    flex-basis: calc((100% / 12) * 10);
+}
+
+.col-12 {
+    flex-basis: calc((100% / 12) * 12);
+}
+
 /* DEBUG */
 
-.debug [class^="col-"] {
-    border: 2px solid greenyellow;
-}
-
-.debug header, .debug footer {
-border: 2px solid greenyellow;
-}
-
-.debug .container {
-    border:2px solid greenyellow;
-    padding: 5px;
-}
-
-.debug .row {
-    border: 2px solid greenyellow
-}
+.debug [class^="col"] {
+    border: 1px dashed black;}
 
 .debug header {
     padding: 10px;
@@ -41,26 +86,19 @@ border: 2px solid greenyellow;
     background-color: rgb(35, 39, 42);
 }
 
-.debug .footer__row {
-    padding: 10px 0px;
-}
-
 .debug section {
     padding: 15px 0px;
 }
 
-.debug a {
-    padding: 5px;
+.debug .col {
+    padding: 10px;
 }
 
-.debug .login, .debug .logo {
-        padding: 10px 0px;
-}
-
-/* BACKGROUND COLORS */
+/* DEBUG BACKGROUND COLORS */
 
 .debug .l-blue {
     background-color: rgb(29, 144, 255);
+        min-height: 250px;
 }
 
 .debug .blue {
@@ -77,14 +115,20 @@ border: 2px solid greenyellow;
 
 .debug .pink {
     background-color: rgb(238, 130, 238);
+        min-height: 250px;
 }
 
 .debug .d-pink {
+    background-color: rgb(240, 127, 128);
+        min-height: 300px;
+}
+.debug .f-pink {
     background-color: rgb(240, 127, 128);
 }
 
 .debug .green {
     background-color: rgb(34, 139, 34);
+        min-height: 500px;
 }
 
 .debug .a-green {
@@ -93,6 +137,7 @@ border: 2px solid greenyellow;
 
 .debug .mint {
     background-color: rgb(127, 255, 212);
+    padding: 10px 0px;
 }
 
 .debug .orange {
@@ -107,79 +152,6 @@ border: 2px solid greenyellow;
     background-color: rgb(35, 39, 42);
 }
 
-/* CLASSES */
 
-.main-page {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.header-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.container {
-     max-width: 900px;
-     margin: 0 auto;
-}
-
-.footer__row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.login {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* COLUMNS */
-.col-2 {
-    flex-basis: calc((100% / 12) * 2);
-}
-
-.col-4 {
-    flex-basis: calc((100% / 12) * 4);
-    min-height: 300px;
-}
-
-.col-5 {
-    flex-basis: calc((100% / 12) * 5);
-}
-
-.col-7 {
-    flex-basis: calc((100% / 12) * 7);
-    min-height: 250px;
-}
-
-.col-8 {
-    flex-basis: calc((100% / 12) * 8);
-}
-
-.col-10 {
-    flex-basis: calc((100% / 12) * 10);
-    min-height: 250px;
-}
-
-.col-12 {
-    flex-basis: calc((100% / 12) * 12);
-    min-height: 500px;
-}
 
 
